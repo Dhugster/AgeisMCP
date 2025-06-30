@@ -1,0 +1,20 @@
+﻿{
+  "mcpServers": {
+    "aegisreader-security": {
+      "command": "node",
+      "args": ["./aegisreader-security-mcp/dist/index.js"],
+      "env": {
+        "AEGIS_SECURITY_LEVEL": "CUI",
+        "AEGIS_AUDIT_ENABLED": "true",
+        "AEGIS_CLASSIFICATION_CHECK": "true",
+        "AEGIS_COMPLIANCE_MODE": "NIST_800_171"
+      }
+    }
+  },
+  "securitySettings": {
+    "auditAllOperations": true,
+    "requireSecurityApproval": true,
+    "classificationEnforcement": true,
+    "complianceValidation": true
+  }
+}
